@@ -28,7 +28,7 @@ body{
 .navbar{
     background-color: var(--dark-color);
     padding: .5rem .6rem;
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 1;
     
@@ -260,8 +260,8 @@ footer  {
 
 footer .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
 
 }
 
@@ -364,6 +364,35 @@ height: auto;
 
 }
 
+/* Page Produit */
+
+.produit-items {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: var(--max-width);
+    margin: 50px auto;
+    z-index: 1;
+    
+}
+
+#taille {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive code */
 
 
@@ -435,6 +464,7 @@ header.monHeader p {
 footer {
     display: grid;
     grid-template-columns: 1fr;
+    position: fixed;
 }
 
 footer .container {
